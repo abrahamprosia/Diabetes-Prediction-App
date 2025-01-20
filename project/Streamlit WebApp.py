@@ -5,11 +5,11 @@ from scipy.stats import norm
 
 
 # Load the saved models and scaler
-logreg_model = joblib.load("project/models/logistic_regression_model.pkl")
-knn_model = joblib.load("project/models/KNN_model.pkl")
-svm_model = joblib.load("project/models/svm_model.pkl")
-rf_model = joblib.load("project/models/random_forest_model.pkl")
-scaler = joblib.load("project/models/scaler.pkl")
+logreg_model = joblib.load("logistic_regression_model.pkl")
+knn_model = joblib.load("KNN_model.pkl")
+svm_model = joblib.load("svm_model.pkl")
+rf_model = joblib.load("random_forest_model.pkl")
+scaler = joblib.load("scaler.pkl")
 
 # Function to calculate margin of error
 def calculate_confidence(probability, confidence_level=0.99):
