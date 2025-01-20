@@ -1,6 +1,0 @@
-Pandas == 2.2.3
-NumPy == 2.2.2
-Scikit-learn == 1.6.1
-Streamlit == 1.41.1
-Joblib == 1.4.2
-SciPy == 1.15.1
