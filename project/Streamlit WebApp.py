@@ -1,16 +1,15 @@
 import streamlit as st
 import joblib
 import numpy as np
-from PIL.ImageMath import unsafe_eval
 from scipy.stats import norm
-from sklearn.linear_model import LogisticRegression
+
 
 # Load the saved models and scaler
-logreg_model = joblib.load("models/logistic_regression_model.pkl")
-knn_model = joblib.load("models/knn_model.pkl")
-svm_model = joblib.load("models/svm_model.pkl")
-rf_model = joblib.load("models/random_forest_model.pkl")
-scaler = joblib.load("models/scaler.pkl")
+logreg_model = joblib.load("logistic_regression_model.pkl")
+knn_model = joblib.load("KNN_model.pkl")
+svm_model = joblib.load("svm_model.pkl")
+rf_model = joblib.load("random_forest_model.pkl")
+scaler = joblib.load("scaler.pkl")
 
 # Function to calculate margin of error
 def calculate_confidence(probability, confidence_level=0.99):
